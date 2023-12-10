@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  background-color: #ece9fd;
+  padding: 6rem 2.3rem 6.6rem;
+
+  font-family: "Epilogue", sans-serif;
+  font-size: 1.6rem;
+}
+
+/*rem - relative size, for mobile*/
+
+h1 {
+  font-weight: 800;
+  font-size: 4rem; /*rem = Root EM*/
+  line-height: 4.8rem;
+
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  list-style: none;
+
+  margin-top: 7.2rem;
+}
+
+ul li span {
+  color: #090039;
+
+  font-weight: 600;
+  font-size: 7.2rem;
+  line-height: 8rem;
+
+  letter-spacing: -2px;
+}
+
+ul li{
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+
+  color:#090039;
+
+  max-width: 25.7rem;
+
+  display: flex;
+  gap: 3.8rem;
+}
+
+main p:first-child {
+  color: #7158ef;
+  letter-spacing: 3px; /*space of letters*/
+  text-transform: uppercase;
+  line-height: 3.2rem;
+
+  margin-bottom: 1.7rem;
+}
+
+h1 + p {
+  color: rgba(10, 0, 57, 0.64);
+  line-height: 3.2rem;
+
+  margin-bottom: 3.2rem;
+}
+
+a{
+  color: #090039;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #4b33d5;
+}
+
+main{
+  max-width: 33rem;
+  margin: 0 auto;
+}
+
+ul li +li{
+  margin-top: 3.2rem;
+}
+
+/*The page will have this config from 700px*/
+@media(min-width: 700px){
+body{
+  padding-top: 8rem;
+}
+
+  main{
+    max-width: 1020px;
+    display: flex;
+    gap: 10rem;
+
+  }
+  main>div{
+    max-width: 484px;
+  }
+
+  ul li{
+    gap: 5.3rem;
+    max-width: 480px;
+    align-items: center;
+
+  }
+
+}
